@@ -27,16 +27,12 @@ def oddEvenList_Helper(head):
         odd_even_connection = head.next
         odd = head
         even = head.next
-        
         while odd != None and even != None :
             odd.next = odd.next.next
             odd = odd.next
-            
             even.next = even.next.next
             even = even.next
-            
         odd.next = odd_even_connection
-
     return head
 
 
